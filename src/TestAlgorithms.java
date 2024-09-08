@@ -41,7 +41,7 @@ public class TestAlgorithms {
         }
 
         endTime = System.nanoTime();
-        System.out.println("Tiempo de ejecución de "+algorithmName+" para 10000 arreglos de tamaño n: "+(endTime - startTime)/1000000+" segundos");
+        System.out.println("Tiempo de ejecución de "+algorithmName+" para 10000 arreglos de tamaño n: "+(endTime - startTime)/1000000000+" segundos");
     }
 
 
