@@ -25,12 +25,12 @@ public class Main {
         TestAlgorithms.test("QuickSort", 1, 10000);
         System.out.println();
 
-        System.out.println("MergeSort");
-        TestAlgorithms.test("MergeSort", 1, 10000);
-        System.out.println();
-
         System.out.println("JavaDefaultSort");
         TestAlgorithms.test("JavaDefaultSort", 1, 10000);
+        System.out.println();
+
+        System.out.println("MergeSort");
+        TestAlgorithms.test("MergeSort", 1, 10000);
         System.out.println();
 
     }

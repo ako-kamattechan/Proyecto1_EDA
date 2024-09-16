@@ -84,7 +84,6 @@ public final class MergeSort {
 
             merge(arr, left, mid, right);
         }
-        initializeOperationCount();
     }
 
     public static void initializeOperationCount(){
