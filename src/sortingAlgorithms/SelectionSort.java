@@ -1,3 +1,7 @@
+package sortingAlgorithms;
+
+import utils.Utils;
+
 public class SelectionSort {
     public static int operations=0;
     public static void selectionSort(int[] arr){

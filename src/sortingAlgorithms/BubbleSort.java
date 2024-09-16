@@ -1,3 +1,6 @@
+package sortingAlgorithms;
+
+import utils.Utils;
 
 public class BubbleSort{
 	public static int operations = 0;

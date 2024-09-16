@@ -1,3 +1,7 @@
+package sortingAlgorithms;
+
+import utils.Utils;
+
 public class HeapSort {
     public static int operations =0;
     public static int heapSize=0;

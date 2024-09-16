@@ -1,15 +1,18 @@
+package sortingAlgorithms;
 
-public class MergeSort {
+public final class MergeSort {
     public static int operations = 0;
 
-    static void merge(int arr[], int left, int mid, int right) {
+    private MergeSort() {}
+
+    private static void merge(int[] arr, int left, int mid, int right) {
         operations += 2;
         int n1 = mid - left + 1;
         int n2 = right - mid;
 
         operations += 2;
-        int L[] = new int[n1];
-        int R[] = new int[n2];
+        int[] L = new int[n1];
+        int[] R = new int[n2];
 
         operations += 2;
         for (int i = 0; i < n1; ++i) {
@@ -69,8 +72,7 @@ public class MergeSort {
 
     }
 
-    static void mergeSort(int arr[], int left, int right) {
-
+    public static void mergeSort(int[] arr, int left, int right) {
         operations++;
         if (left < right) {
             operations++;
@@ -82,6 +84,7 @@ public class MergeSort {
 
             merge(arr, left, mid, right);
         }
+        initializeOperationCount();
     }
 
     public static void initializeOperationCount(){
